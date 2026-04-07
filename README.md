@@ -9,9 +9,11 @@ Translate web pages using Google, Yandex, Bing, or local AI (Ollama/LM Studio)
 
 
 
-//atur target bahasanya cth : i id,jp,en.
+//atur target bahasanya cth : id,jp,en.
+
     let targetLang = GM_getValue('targetLang', 'id'); 
     
 //atur bahasa sumber halaman (untuk auto cuma berkerja untuk google)  
+
     let sourceLang = 'auto';
  
