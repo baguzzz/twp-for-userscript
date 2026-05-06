@@ -65,7 +65,7 @@ Anda perlu salah satu ekstensi berikut:
 - Salin seluruh kode dari file `twp-translate.user.js`  
 - Simpan (`Ctrl+S`)
 
-Atau jika Anda menyediakan *raw URL*: https://raw.githubusercontent.com/baguzzz/twp-for-userscript/blob/main/TWP%20-%20Translate%20Web%20Pages%20(Local%20AI)-3.0.0.user.js
+Atau jika Anda menyediakan *raw URL*: [Https://raw.githubusercontent.com/baguzzz/twp-for-userscript/blob/main/TWP-TranslateWebPages(LocalAI)-3.0.0.user.js](https://github.com/baguzzz/twp-for-userscript/raw/refs/heads/main/TWP%20-%20Translate%20Web%20Pages%20(Local%20AI)-3.0.0.user.js)
 Klik **Install** pada halaman yang muncul.
 
 ### 3. Aktifkan
