@@ -105,10 +105,10 @@ Pastikan service berjalan di http://localhost:11434
 
 .Model name = llama3.2
 
-.Prompt (contoh):Translate the following text to {{targetLang}}. Return ONLY the translation, no extra text:
-{{text}}
+.Prompt (contoh):```Translate the following text to {{targetLang}}. Return ONLY the translation, no extra text:
+{{text}}```
 
-💻 Contoh dengan LM Studio
+## 💻 Contoh dengan LM Studio
 
 1.Buka LM Studio → Load model → Start server lokal (biasanya di port 1234)
 
@@ -124,23 +124,32 @@ Tips Prompt yang Baik
 
 .Perintahkan model untuk hanya mengembalikan terjemahan tanpa komentar tambahan.
 
-.Contoh prompt yang sudah terbukti:Translate the following text to {{targetLang}}. Do not explain, do not add quotes. Only the translation:
-"{{text}}"
+.Contoh prompt yang sudah terbukti:```Translate the following text to {{targetLang}}. Do not explain, do not add quotes. Only the translation:
+"{{text}}"```
 
-🛠️ Konfigurasi Lanjutan (Opsional)
+## 🛠️ Konfigurasi Lanjutan (Opsional)
 
 Anda dapat mengubah nilai default dengan membuka Kode Sumber skrip (via Tampermonkey → Edit) dan mengubah variabel di bagian KONFIGURASI:
 
-let targetLang = 'id';        // bahasa default
-let engine = 'google';        // 'google', 'yandex', 'bing', 'localai'
-let localAIEndpoint = 'http://localhost:11434/api/generate';
+```js
+let targetLang = "id"; // bahasa default
+
+let engine = "google"; // 'google', 'yandex', 'bing', 'localai'
+
+
+let localAIEndpoint = "http://localhost:11434/api/generate";
+
 let localAIModel = 'llama3.2';
 
 Atau dengan membuka GM_setValue secara manual melalui console browser: GM_setValue('targetLang', 'en');
+
 GM_setValue('engine', 'localai');
+```
 
 
-❓ Tanya Jawab (FAQ)
+
+
+## ❓ Tanya Jawab (FAQ)
 1. Apakah data saya dikirim ke server luar saat menggunakan AI Lokal?
 Tidak. Seluruh proses terjemahan terjadi di komputer Anda sendiri. Hanya saat memilih Google/Yandex/Bing data akan dikirim ke layanan tersebut.
 
@@ -156,18 +165,18 @@ Ya, daftar bahasa yang tersedia: Indonesia, Inggris, Spanyol, Prancis, Jerman, C
 5. Saya ingin berkontribusi. Bagaimana caranya?
 Laporkan issue, kirim pull request, atau kembangkan sendiri. Script ini terbuka untuk dimodifikasi.
 
-📄 Lisensi
+## 📄 Lisensi
 MIT License – Bebas digunakan, dimodifikasi, dan didistribusikan.
 Kode asli terinspirasi dari [FilipePS/Traduzir-paginas-web](https://github.com/FilipePS/Traduzir-paginas-web).
 
-🙏 Ucapan Terima Kasih
+## 🙏 Ucapan Terima Kasih
 Google Translate, Yandex, MyMemory (Bing) untuk API publik mereka.
 
 Ollama & LM Studio – membuat AI lokal dapat diakses semua orang.
 
 Komunitas UserScript yang terus menginspirasi.
 
-📬 Kontak & Dukungan
+## 📬 Kontak & Dukungan
 ⭐ Beri bintang jika proyek ini bermanfaat
 
 🐛 Laporkan bug melalui [Issues GitHub](https://github.com/baguzzz/twp-for-userscript/issues)
