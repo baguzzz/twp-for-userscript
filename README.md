@@ -95,6 +95,8 @@ Klik tombol **🌐 TWP** → muncul panel pengaturan.
    ollama run llama3.2
 
 Pastikan service berjalan di http://localhost:11434
+
+
 3. Di panel TWP:
 
 .Engine = Local AI
@@ -107,6 +109,7 @@ Pastikan service berjalan di http://localhost:11434
 {{text}}
 
 💻 Contoh dengan LM Studio
+
 1.Buka LM Studio → Load model → Start server lokal (biasanya di port 1234)
 
 2.Endpoint URL di TWP: http://localhost:1234/v1/completions (jika menggunakan API OpenAI-like)
@@ -116,6 +119,7 @@ Pastikan service berjalan di http://localhost:11434
 ⚠️ Catatan: Pastikan model Anda cukup ringan (3B–7B) agar respons cepat. Gunakan temperature=0.1 untuk hasil terjemahan yang konsisten.
 
 Tips Prompt yang Baik
+
 .Gunakan {{text}} dan {{targetLang}} sebagai variabel.
 
 .Perintahkan model untuk hanya mengembalikan terjemahan tanpa komentar tambahan.
@@ -124,6 +128,7 @@ Tips Prompt yang Baik
 "{{text}}"
 
 🛠️ Konfigurasi Lanjutan (Opsional)
+
 Anda dapat mengubah nilai default dengan membuka Kode Sumber skrip (via Tampermonkey → Edit) dan mengubah variabel di bagian KONFIGURASI:
 
 let targetLang = 'id';        // bahasa default
